@@ -1,17 +1,16 @@
 <header>
 
-    <a class="site-title" href="{{ path('app_accueil') }}">
-        TODO insérer image {#<img src="{{ asset('img/logo.png') }}" alt="sortir.com">#}
-    </a>
 
-    <nav>
-        <ul>
-            <li><a href="{{ path('app_accueil') }}">Accueil</a></li>
-{#            <li><a href="{{ path('app_monProfil') }}">Mon profil</a></li>#}
-            <li><a href="{{ path('app_login') }}">Se déconnecter</a></li>
+    <nav class="nav">
+        <a class="logo" href="{{ path('app_accueil') }}">
+{#            <img src="{{ asset('img/logo_provisoire.png') }}" alt="sortir.com">#}
+        </a>
 
+        <ul class="list">
+            <li><a href="{{ path('app_login') }}">Se déconnecter  <i class="em em-door" aria-role="presentation" aria-label="DOOR"></i></a></li>
+            <li><a href="{{ path('app_monProfil') }}">Mon profil  <i class="em em-sunglasses" aria-role="presentation" aria-label="SMILING FACE WITH SUNGLASSES"></i></a></li>
+            <li><a href="{{ path('app_accueil') }}">Accueil  <i class="em em-hugging_face" aria-role="presentation" aria-label="HUGGING FACE"></i></a></li>
         </ul>
-
     </nav>
 
 </header>
