@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59366ff8-2724-4273-bc31-777c21bfa43c" name="Changes" comment="$">
-      <change afterPath="$PROJECT_DIR$/src/Controller/MonProfilController.php" afterDir="false" />
+    <list default="true" id="e6c49e40-ba90-4344-b674-208c249426da" name="Changes" comment="base">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/accueil.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/accueil.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +145,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Prog/wamp64/www/correction/demo-symfony",
+    "last_opened_file_path": "F:/Alexis/ENI/www/demo-symfony",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -164,6 +165,7 @@
       <updated>1679908336339</updated>
       <workItem from="1679908337466" duration="2651000" />
       <workItem from="1679911012627" duration="5211000" />
+      <workItem from="1679987204460" duration="3409000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1679910284962</created>
