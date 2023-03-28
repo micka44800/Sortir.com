@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59366ff8-2724-4273-bc31-777c21bfa43c" name="Changes" comment="$$$">
-      <change afterPath="$PROJECT_DIR$/dist/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo_provisoire.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/soulo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inc/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/header.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/accueil.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/accueil.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CSS/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MonProfilController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MonProfilController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profil/monProfil.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profil/monProfil.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +177,7 @@
       <workItem from="1679908337466" duration="2651000" />
       <workItem from="1679911012627" duration="5211000" />
       <workItem from="1679929430487" duration="1709000" />
-      <workItem from="1679988520737" duration="21224000" />
+      <workItem from="1679988520737" duration="25225000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1679910284962</created>
@@ -211,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679990775051</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="$$$">
+      <created>1680012914983</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680012914983</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
