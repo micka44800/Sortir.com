@@ -5,7 +5,7 @@ namespace App\Controller ;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class monProfilController extends AbstractController
+class MonProfilController extends AbstractController
 {
     #[Route('/monProfil', name: "app_monProfil")]
     public function monProfil(){
