@@ -1,8 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
+{% block title %}
+    {{ parent() }}
 {% endblock %}
 
-{% block title %}
-    {{ parent() }} | Accueil
+{% block body %}
+    <h1>Filtrer les sorties</h1>
+    <div>
+        Site :
+    </div>
 {% endblock %}
