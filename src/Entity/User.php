@@ -11,7 +11,8 @@ use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
-#[UniqueEntity(fields: ['email'] || ['pseudo'], message: 'There is already an account with this email')]
+#[UniqueEntity(fields: ['email'] , message: 'There is already an account with this email')]
+#[UniqueEntity(fields: ['pseudo'], message: 'There is already an account with this pseudo')]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
     #[ORM\Id]
@@ -44,9 +45,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $prenom = null;
 
     #[ORM\Column(nullable: true)]
-    private ?int $telephone = null;
+    private ?string $telephone = null;
 
-    #[ORM\Column]
+    #[ORM\Column (nullable : true)]
     private ?bool $actif = null;
 
     #[ORM\ManyToMany(targetEntity: Sortie::class, inversedBy: 'participant')]
@@ -89,6 +90,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function getUserIdentifier(): string
     {
         return (string) $this->email;
+
     }
 
     /**
@@ -182,12 +184,12 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getTelephone(): ?int
+    public function getTelephone(): ?string
     {
         return $this->telephone;
     }
 
-    public function setTelephone(?int $telephone): self
+    public function setTelephone(?string $telephone): self
     {
         $this->telephone = $telephone;
 
