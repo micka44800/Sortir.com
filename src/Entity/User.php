@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
@@ -46,6 +48,21 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column]
     private ?bool $actif = null;
+
+    #[ORM\ManyToMany(targetEntity: Sortie::class, inversedBy: 'participant')]
+    private Collection $Inscrit;
+
+    #[ORM\OneToMany(mappedBy: 'organisateur', targetEntity: Sortie::class)]
+    private Collection $Organise;
+
+    #[ORM\ManyToOne(inversedBy: 'rattacheA')]
+    private ?Site $Site = null;
+
+    public function __construct()
+    {
+        $this->Inscrit = new ArrayCollection();
+        $this->Organise = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -185,6 +202,72 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setActif(bool $actif): self
     {
         $this->actif = $actif;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Sortie>
+     */
+    public function getInscrit(): Collection
+    {
+        return $this->Inscrit;
+    }
+
+    public function addInscrit(Sortie $inscrit): self
+    {
+        if (!$this->Inscrit->contains($inscrit)) {
+            $this->Inscrit->add($inscrit);
+        }
+
+        return $this;
+    }
+
+    public function removeInscrit(Sortie $inscrit): self
+    {
+        $this->Inscrit->removeElement($inscrit);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Sortie>
+     */
+    public function getOrganise(): Collection
+    {
+        return $this->Organise;
+    }
+
+    public function addOrganise(Sortie $organise): self
+    {
+        if (!$this->Organise->contains($organise)) {
+            $this->Organise->add($organise);
+            $organise->setOrganisateur($this);
+        }
+
+        return $this;
+    }
+
+    public function removeOrganise(Sortie $organise): self
+    {
+        if ($this->Organise->removeElement($organise)) {
+            // set the owning side to null (unless already changed)
+            if ($organise->getOrganisateur() === $this) {
+                $organise->setOrganisateur(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function getSite(): ?Site
+    {
+        return $this->Site;
+    }
+
+    public function setSite(?Site $Site): self
+    {
+        $this->Site = $Site;
 
         return $this;
     }
