@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6c49e40-ba90-4344-b674-208c249426da" name="Changes" comment="base">
+    <list default="true" id="59366ff8-2724-4273-bc31-777c21bfa43c" name="Changes" comment="$$$">
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Sortir.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sortir.com.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/accueil.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/accueil.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MonProfilController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/monProfilController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profil/monProfil.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profil/monProfil.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +149,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/Alexis/ENI/www/demo-symfony",
+    "last_opened_file_path": "C:/wamp/www/Sortir.com-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -158,14 +162,15 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e6c49e40-ba90-4344-b674-208c249426da" name="Changes" comment="" />
+      <changelist id="59366ff8-2724-4273-bc31-777c21bfa43c" name="Changes" comment="$" />
       <created>1679908336339</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679908336339</updated>
       <workItem from="1679908337466" duration="2651000" />
       <workItem from="1679911012627" duration="5211000" />
-      <workItem from="1679987204460" duration="3409000" />
+      <workItem from="1679929430487" duration="1709000" />
+      <workItem from="1679988520737" duration="1617000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1679910284962</created>
@@ -181,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679911408751</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="$$$">
+      <created>1679929614625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679929614625</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +225,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="base" />
-    <option name="LAST_COMMIT_MESSAGE" value="base" />
+    <MESSAGE value="$$$" />
+    <option name="LAST_COMMIT_MESSAGE" value="$$$" />
   </component>
 </project>
