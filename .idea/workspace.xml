@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59366ff8-2724-4273-bc31-777c21bfa43c" name="Changes" comment="$$$">
-      <change afterPath="$PROJECT_DIR$/dist/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/CSS/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo_provisoire.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/soulo.jpg" afterDir="false" />
+    <list default="true" id="e6c49e40-ba90-4344-b674-208c249426da" name="Changes" comment="base">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/inc/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/header.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/accueil.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/accueil.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,14 +145,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/wamp/www/Sortir.com-master/public/img",
+    "last_opened_file_path": "C:/wamp64/www/demo-symfony",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -173,7 +167,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="59366ff8-2724-4273-bc31-777c21bfa43c" name="Changes" comment="$" />
+      <changelist id="e6c49e40-ba90-4344-b674-208c249426da" name="Changes" comment="base" />
       <created>1679908336339</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -182,6 +176,7 @@
       <workItem from="1679911012627" duration="5211000" />
       <workItem from="1679929430487" duration="1709000" />
       <workItem from="1679988520737" duration="21224000" />
+      <workItem from="1680014686643" duration="2768000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1679910284962</created>
@@ -211,7 +206,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679990775051</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="base">
+      <created>1680013325075</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680013325075</updated>
+    </task>
+    <task id="LOCAL-00006" summary="base">
+      <created>1680016640528</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680016640528</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,8 +251,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="base" />
     <MESSAGE value="$$$" />
-    <option name="LAST_COMMIT_MESSAGE" value="$$$" />
+    <MESSAGE value="base" />
+    <option name="LAST_COMMIT_MESSAGE" value="base" />
   </component>
 </project>
