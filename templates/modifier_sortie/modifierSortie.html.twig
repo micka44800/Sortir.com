@@ -1,4 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    <div>page modification sortie</div>
+    {{ form_start(sortie) }}
+    {{ form_widget(sortie) }}
+    <button type="submit">enregistrer</button>
+    {{ form_end(sortie) }}
 {% endblock %}
