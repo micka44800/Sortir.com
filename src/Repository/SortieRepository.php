@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\Sortie;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\Tools\Pagination\Paginator;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -53,6 +54,19 @@ class SortieRepository extends ServiceEntityRepository
 //            ->getResult()
 //        ;
 //    }
+    public function joinLieu(){
+        // avec QueryBuilder
+        $queryBuilder = $this->createQueryBuilder('s');
+        $queryBuilder->leftJoin('s.lieu', 'slieu');//left join pour récupérer les séries qui n'ont pas de saisons
+
+
+        $query = $queryBuilder->getQuery();
+
+        $paginator = new Paginator($query);
+
+        return $paginator;
+
+    }
 
 //    public function findOneBySomeField($value): ?Sortie
 //    {
