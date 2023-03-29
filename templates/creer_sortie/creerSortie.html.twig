@@ -1,4 +1,35 @@
 {% extends 'base.html.twig' %}
+
 {% block body %}
-<div>page création sortie</div>
+    <h1>Créer une sortie</h1>
+    {{ form_start(form) }}
+
+    <div class="error">
+        {{ form_errors(form) }}
+    </div>
+    <div class="wrapper">
+        <div class="nom">
+            {{ form_row(form.nom) }}
+        </div>
+{#         <div class="date">
+            {{ form_row(form.dateHeureDebut) }}
+        </div>
+        <div class="dateLimite">
+            {{ form_row(form.dateLimiteInscription) }}
+        </div>
+        <div class="nbrPlace">
+            {{ form_row(form.participant) }}
+        </div>
+        <div class="duree">
+            {{ form_row(form.duree) }}
+        </div>
+        <div class="description">
+            {{ form_row(form.description) }}
+        </div>
+        <div class="lieu">
+            {{ form_row(form.lieu) }}
+        </div>#}
+    </div>
+
+    {{ form_end(form) }}
 {% endblock %}
