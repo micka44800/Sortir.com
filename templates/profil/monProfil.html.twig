@@ -1,22 +1,16 @@
 {% extends 'base.html.twig' %}
 
+<link rel="stylesheet" href="{{ asset('CSS/monProfil.css') }}" >
+
+{% block title %}Mon Profil{% endblock %}
+
 {% block body %}
-    <section class="image2">
-    <h1>Mon profil</h1>
-    <form action="" method="get" class="form-example">
-        <div class="pseudo">
-            <label for="pseudo">Pseudo : </label>
-            <input type="text" name="pseudo" id="pseudo" required>
-        </div>
-        <div class="prenom">
-            <label for="prenom">Prénom : </label>
-            <input type="prenom" name="prenom" id="prenom" required>
-        </div>
-        <div class="btn-form">
-            <input type="submit" value="Subscribe!">
-        </div>
-    </form>
-    </section>
+    <h1 class="monProfil">Mon Profil</h1>
 
+    {{ form_start(formMonProfil) }}
+    {{ form_widget(formMonProfil) }}
 
+    <button type="submit" class="btn">Enregistrer</button>
+    <button type="reset" class="btn">Annuler</button>
+    {{ form_end(formMonProfil) }}
 {% endblock %}
