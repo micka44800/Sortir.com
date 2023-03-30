@@ -7,29 +7,36 @@
     <div class="error">
         {{ form_errors(form) }}
     </div>
-    <div class="wrapper">
+
+    <div class="wrapperLeft">
         <div class="nom">
             {{ form_row(form.nom) }}
         </div>
-{#         <div class="date">
+         <div class="date">
             {{ form_row(form.dateHeureDebut) }}
         </div>
         <div class="dateLimite">
             {{ form_row(form.dateLimiteInscription) }}
         </div>
-        <div class="nbrPlace">
-            {{ form_row(form.participant) }}
+        <div class="nbrInscrMax">
+            {{ form_row(form.nbInscriptionsMax) }}
         </div>
         <div class="duree">
             {{ form_row(form.duree) }}
         </div>
-        <div class="description">
-            {{ form_row(form.description) }}
+        <div class="infoSorti">
+            {{ form_row(form.infosSortie) }}
         </div>
-        <div class="lieu">
-            {{ form_row(form.lieu) }}
-        </div>#}
     </div>
 
+    <div class="wrapperRight">
+
+        <div class="lieu">
+            {{ form_row(form.lieu) }}
+        </div>
+    </div>
+
+    <button type="submit">Créer</button>
     {{ form_end(form) }}
+
 {% endblock %}
