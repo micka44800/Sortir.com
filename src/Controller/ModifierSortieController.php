@@ -20,7 +20,7 @@ class ModifierSortieController extends AbstractController
         $sortieForm = $this->createForm(ModifierSortieType::class, $sortie);
         $sortieForm->handleRequest($request);
         if($sortieForm->isSubmitted() && $sortieForm->isValid()){
-            $sortie->setAuthor($this->getUser()->getUserIdentifier());
+            $entityManager->flush();
         }
       /*  $sortie->setNom('');
         $sortie->setDateHeureDebut();
@@ -30,26 +30,9 @@ class ModifierSortieController extends AbstractController
         $sortie->setInfosSortie();
         $sortie->setSite();
         $sortie->setLieu();*/
-        $entityManager->flush();
         return $this->render('modifier_sortie/modifierSortie.html.twig', [
             'sortie' => $sortieForm,
         ]);
     }
 
-    #[Route('/profil/{id}', name: 'app_profil_details')]
-    public function details(int $id, UserRepository $userRepository):Response
-    {
-
-        $user = $userRepository->find($id);
-        if (!$user){
-            throw $this->createNotFoundException('User does not exist');
-
-        }
-        return $this->render('profil/profil.html.twig',
-            [
-
-                'profilForm'=>$user
-            ]);
-
-    }
 }
