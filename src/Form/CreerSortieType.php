@@ -22,9 +22,6 @@ class CreerSortieType extends AbstractType
             ->add('dateLimiteInscription',DateTimeType::class)
             ->add('nbInscriptionsMax')
             ->add('infosSortie')
-            ->add('participant')
-            ->add('organisateur')
-            ->add('site')
             ->add('lieu',EntityType::class, [
         // looks for choices from this entity
         'class' => Lieu::class,
