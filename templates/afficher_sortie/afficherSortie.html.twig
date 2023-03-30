@@ -1,5 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div>page afficher sortie</div>
+    {% for s in SortieA %}
+        {{ s.duree }}
+        {{ s.nbInscriptionsMax }}
+        {{ s.etat }}
+        {{ s.infosSortie }}
+    {% endfor %}
 {% endblock %}
