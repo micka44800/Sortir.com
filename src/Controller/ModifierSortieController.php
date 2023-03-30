@@ -30,26 +30,9 @@ class ModifierSortieController extends AbstractController
         $sortie->setInfosSortie();
         $sortie->setSite();
         $sortie->setLieu();*/
-
         return $this->render('modifier_sortie/modifierSortie.html.twig', [
             'sortie' => $sortieForm,
         ]);
     }
 
-    #[Route('/profil/{id}', name: 'app_profil_details')]
-    public function details(int $id, UserRepository $userRepository):Response
-    {
-
-        $user = $userRepository->find($id);
-        if (!$user){
-            throw $this->createNotFoundException('User does not exist');
-
-        }
-        return $this->render('profil/profil.html.twig',
-            [
-
-                'profilForm'=>$user
-            ]);
-
-    }
 }
