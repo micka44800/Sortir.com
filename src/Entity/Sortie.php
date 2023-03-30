@@ -225,5 +225,7 @@ class Sortie
         return $this;
     }
 
-
+//    public function setAuthor(string $getUserIdentifier)
+//    {
+//    }
 }
