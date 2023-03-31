@@ -33,8 +33,9 @@ class CreerSortieController extends AbstractController
             $entity->setSite($this->getUser()->getSite());
             $entity->setSituation($etatRepository->findOneBy(['libelle'=>'Crée']));
 
-
+//            dd($entity);
             $entityManager->persist($entity);
+
             $entityManager->flush();
         }
         return $this->render('creer_sortie/creerSortie.html.twig', [
