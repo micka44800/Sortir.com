@@ -2,22 +2,23 @@
 
 {% block body %}
     {% for s in SortieA %}
-        <label>nom de la sortie : </label>  {{ s.nom }}<br>
-        <label>Date et heure de la sortie : </label> {{ s.dateHeureDebut | date('D, d M Y H:i:s') }}<br>
-        <label>Clôture : </label>{{ s.dateLimiteInscription | date('D, d-m-Y') }}<br>
-        <label>inscrits/places : </label>{{ s.participant.count }}<label>/</label> {{s.nbInscriptionsMax  }}<br>
-        <label>duree : </label>  {{ s.duree }}<br>
-        <label>etat : </label>  {{ s.etat }}<br>
-        <label>organisateur : </label>
-        <a href="{{ path('app_monProfil', {'id':s.organisateur.id}) }}">
-        {{ s.organisateur.nom }}</a><br>
+        <div class="wrapper">
+            <label>nom de la sortie : </label>  {{ s.nom }}<br>
+            <label>Date et heure de la sortie : </label> {{ s.dateHeureDebut | date('D, d M Y H:i:s') }}<br>
+            <label>Clôture : </label>{{ s.dateLimiteInscription | date('D, d-m-Y') }}<br>
+            <label>inscrits/places : </label>{{ s.participant.count }}<label>/</label> {{s.nbInscriptionsMax  }}<br>
+            <label>duree : </label>  {{ s.duree }}<br>
+            <label>etat : </label>  {{ s.etat }}<br>
+            <label>organisateur : </label>
+            <a href="{{ path('app_monProfil', {'id':s.organisateur.id}) }}">
+            {{ s.organisateur.nom }}</a><br>
 
-        <label>Action : </label>
-        <a href="">afficher / </a>
-        <a href="">modifier / </a>
-        <a href="">se désister / </a>
-        <a href="{{ path('app_inscriptionSortie', {'id': s.id }) }}">s'inscrire</a>
-
+            <label>Action : </label>
+            <a href="">afficher / </a>
+            <a href="">modifier / </a>
+            <a href="">se désister / </a>
+            <a href="{{ path('app_inscriptionSortie', {'id': s.id }) }}">s'inscrire</a>
+        </div>
 
     {% endfor %}
 {% endblock %}
