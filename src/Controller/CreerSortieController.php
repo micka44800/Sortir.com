@@ -26,7 +26,7 @@ class CreerSortieController extends AbstractController
 
         $form = $this->createForm(CreerSortieType::class, $entity);
         $form->handleRequest($request);
-        dump($entity);
+
 
         if($form->isSubmitted() && $form->isValid()){
 
