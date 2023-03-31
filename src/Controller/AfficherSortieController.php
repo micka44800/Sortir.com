@@ -36,6 +36,7 @@ class AfficherSortieController extends AbstractController
         $inscrit = $this->getUser();
         $sortie = $repository->find($id);
     $sortie->addParticipant($inscrit);
+    if ($this->getUser())
             $entityManager->persist($sortie);
             $entityManager->flush();
 

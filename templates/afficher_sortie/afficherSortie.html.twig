@@ -9,7 +9,7 @@
         <label>duree : </label>  {{ s.duree }}<br>
         <label>etat : </label>  {{ s.etat }}<br>
         <label>organisateur : </label>
-        <a href="{{ path('app_monProfil', {'id':s.organisateur.id}) }}">
+        <a href="{{ path('app_profil_details', {'id':s.organisateur.id}) }}">
         {{ s.organisateur.nom }}</a><br>
 
         <label>Action : </label>
