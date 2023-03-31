@@ -26,6 +26,7 @@ class ProfilController extends AbstractController
     {
 
         $user = $userRepository->find($id);
+
         if (!$user){
             throw $this->createNotFoundException('User does not exist');
         }
