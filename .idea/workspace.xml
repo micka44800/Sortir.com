@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="59366ff8-2724-4273-bc31-777c21bfa43c" name="Changes" comment="$$$">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/CSS/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/CSS/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/CreerSortieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CreerSortieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Sortie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Sortie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/CreerSortieType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CreerSortieType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/creer_sortie/creerSortie.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/creer_sortie/creerSortie.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/inc/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/header.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +150,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/wamp/www/pokemon",
+    "last_opened_file_path": "C:/wamp/www/demo-symfony",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -181,7 +182,8 @@
       <workItem from="1679929430487" duration="1709000" />
       <workItem from="1679988520737" duration="25873000" />
       <workItem from="1680074105948" duration="22546000" />
-      <workItem from="1680159889877" duration="13056000" />
+      <workItem from="1680159889877" duration="14463000" />
+      <workItem from="1680246399192" duration="13175000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1679910284962</created>
@@ -239,7 +241,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680102237739</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="$$$">
+      <created>1680179331832</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680179331832</updated>
+    </task>
+    <task id="LOCAL-00010" summary="$$$">
+      <created>1680180420969</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680180420969</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
