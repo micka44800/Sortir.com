@@ -1,42 +1,71 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div class="wrapper">
-    <h1>Créer une sortie</h1>
-        <hr>
-    {{ form_start(form) }}
+    <section class="imgCreation">
 
-    <div class="error">
-        {{ form_errors(form) }}
-    </div>
-        <div class="form">
+        <div class="creation">
+            <h2>Créer une sortie</h2>
+                <hr>
+            {{ form_start(form) }}
 
-        <div class="nom">
-            {{ form_row(form.nom) }}
-        </div>
-         <div class="date">
-            {{ form_row(form.dateHeureDebut) }}
-        </div>
-        <div class="dateLimite">
-            {{ form_row(form.dateLimiteInscription) }}
-        </div>
-        <div class="nbrInscrMax">
-            {{ form_row(form.nbInscriptionsMax) }}
-        </div>
-        <div class="duree">
-            {{ form_row(form.duree) }}
-        </div>
-        <div class="infoSorti">
-            {{ form_row(form.infosSortie) }}
-        </div>
+            <div class="error">
+                {{ form_errors(form) }}
+            </div>
+                <div class="form">
 
-        <div class="lieu">
-            {{ form_row(form.lieu) }}
-        </div>
-        </div>
+                    <div class="nom">
+                        <div class="libelleNom">
+
+                        </div>
+                        {{ form_row(form.nom) }}
+                    </div>
+
+                     <div class="date">
+                         <div class="libelleDate">
+
+                         </div>
+                        {{ form_row(form.dateHeureDebut) }}
+                    </div>
+
+                    <div class="dateLimite">
+                        <div class="libelleLimite">
+
+                        </div>
+                        {{ form_row(form.dateLimiteInscription) }}
+                    </div>
+
+                    <div class="nbrInscrMax">
+                        <div class="libelleInscrMax">
+
+                        </div>
+                        {{ form_row(form.nbInscriptionsMax) }}
+                    </div><br>
+
+                    <div class="duree">
+                        <div class="libelleDuree">
+
+                        </div>
+                        {{ form_row(form.duree) }}
+                    </div>
+
+                    <div class="infoSorti">
+                        <div class="libelleSorti">
+
+                        </div>
+                        {{ form_row(form.infosSortie) }}
+                    </div><br>
+
+                    <div class="lieu">
+                        <div class="libelleLieu">
+
+                        </div>
+                        {{ form_row(form.lieu) }}
+                    </div>
+                </div>
 
 
-    <button type="submit" class="create">Créer</button>
-    {{ form_end(form) }}
-    </div>
+            <button type="submit" class="create">{#<a href="{{ path('app_accueil') }}">#}Créer{#  #}</a></button>
+            {{ form_end(form) }}
+        </div>
+    </section>
 {% endblock %}

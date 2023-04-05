@@ -7,10 +7,43 @@
 {% block body %}
     <section class="image1">
     <div class="filtrer">
-    <h1>Filtrer les sorties</h1>
-    <div>
-        Site :
+    <h2 class="fs">Filtrer les sorties</h2><hr><br>
+    {{ form(form) }}
     </div>
-    </div>
+{#        <section class="imgAfficher">#}
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Nom de la sortie<hr></th>
+                    <th>Date de la sortie<hr></th>
+                    <th>Clôture<hr></th>
+                    <th>Inscrits/ Places<hr></th>
+                    <th>Durée<hr></th>
+                    <th>Organisateur<hr></th>
+                    <th>actions<hr></th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for s in SortieA %}
+                    <tr>
+                        <td> {{ s.nom }}</td>
+                        <td>{{ s.dateHeureDebut | date('D, d M Y H:i:s') }}</td>
+                        <td>{{ s.dateLimiteInscription | date('D, d-m-Y') }}</td>
+                        <td>{{ s.participant.count }}/{{s.nbInscriptionsMax  }}</td>
+                        <td>{{ s.duree }}</td>
+                        <td> <a href="{{ path('app_profil_details', {'id':s.organisateur.id}) }}">
+                                {{ s.organisateur.nom }}</a></td>
+                        <td>
+                            <a href="{{ path('app_modifier_sortie', {'id': 'x'}) }}" class="x">modifier</a>
+                            <a href="" class="x">se désister</a>
+                            <a href="{{ path('app_inscriptionSortie', {'id': s.id }) }}" class="x">s'inscrire</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+{#        </section>#}
     </section>
+
 {% endblock %}
